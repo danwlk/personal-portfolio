@@ -82,7 +82,7 @@ const NavBar = () => {
                 <img src={GitHubLogo} alt="Github" style={{ width: "30px" }} />
               </a>
             </div>
-            <button className="vvd" onClick={() => console.log("Connect")}>
+            <button className="connectButton" onClick={() => console.log("Connect")}>
               <span>Let's Connect</span>
             </button>
           </span>
