@@ -30,7 +30,7 @@ const NavBar = () => {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          <a href="http://localhost:3000/">
+          <a href="http://doyupkim.com/">
             <img
               src={Logo}
               alt="Logo"
@@ -96,7 +96,7 @@ const NavBar = () => {
               className="connectButton"
               onClick={() => console.log("Connect")}
             >
-              <span>Let's Connect</span>
+              <span>Connect With Me</span>
             </button>
           </span>
         </Navbar.Collapse>
