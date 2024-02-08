@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
 
   useEffect(() => {
-    document.title = "Welcome to Doyup's Personal Portfolio!"
+    document.title = "Welcome to Doyup's Portfolio!"
   }, [])
 
   return (
