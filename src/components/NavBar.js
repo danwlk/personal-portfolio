@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import Logo from "../../assets/img/logo.png";
-import LinkedInLogo from "../../assets/img/linkedIn.png";
-import GitHubLogo from "../../assets/img/gitHub.png";
+import Logo from "../assets/img/logo.png";
+import LinkedInLogo from "../assets/img/linkedIn.png";
+import GitHubLogo from "../assets/img/gitHub.png";
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -30,11 +30,13 @@ const NavBar = () => {
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container>
         <Navbar.Brand href="#home">
-          <img
-            src={Logo}
-            alt="Logo"
-            style={{ filter: "invert(100%)", width: "100px" }}
-          />
+          <a href="http://localhost:3000/">
+            <img
+              src={Logo}
+              alt="Logo"
+              style={{ filter: "invert(100%)", width: "100px" }}
+            />
+          </a>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
@@ -71,18 +73,29 @@ const NavBar = () => {
           </Nav>
           <span className="navbar-text">
             <div className="social-icon">
-              <a href="https://www.linkedin.com/in/doyupkim/">
+              <a
+                href="https://www.linkedin.com/in/doyupkim/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src={LinkedInLogo}
                   alt="LinkedIn"
                   style={{ width: "30px" }}
                 />
               </a>
-              <a href="https://github.com/danwlk?tab=repositories">
+              <a
+                href="https://github.com/danwlk?tab=repositories"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={GitHubLogo} alt="Github" style={{ width: "30px" }} />
               </a>
             </div>
-            <button className="connectButton" onClick={() => console.log("Connect")}>
+            <button
+              className="connectButton"
+              onClick={() => console.log("Connect")}
+            >
               <span>Let's Connect</span>
             </button>
           </span>
