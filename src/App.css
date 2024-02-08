@@ -227,7 +227,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  animation: updown 3s linear infinite;
+  animation: updown 10s linear infinite;
 }
 
 .social-icon a {
@@ -295,6 +295,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .banner button {
+  background-color: transparent;
   color: #b8b8b8;
   font-weight: 700;
   font-size: 20px;
@@ -313,4 +314,51 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .banner button:hover svg {
   margin-left: 25px;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-20px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
+}
+
+/**********************************************************************************************************************************************/
+/* Skills Styles */
+.skills-sphere {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./assets/img/banner-bg.png);
+}
+
+.tagcloud {
+  display: inline-block;
+  top: 0;
+  left: 0;
+  font-weight: 700;
+  letter-spacing: 0.0625em;
+  font-size: 1.3em;
+}
+
+.tagcloud--item {
+  color: #b8b8b8;
+  text-transform: uppercase;
+}
+
+.tagcloud--item:hover {
+  color: blueviolet;
 }

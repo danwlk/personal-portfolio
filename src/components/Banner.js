@@ -83,7 +83,7 @@ const Banner = () => {
             </h1>
             <p>
               I am a web developer based in Waterloo, Ontario. I'm currently
-              learning React, Tailwind, and SQL. My website is unfinished, I will be updating it soon.
+              learning React, Tailwind, and MySQL. My website is unfinished, I will be updating it soon.
             </p>
             <button onClick={() => console.log("connect")}>
               Connect With Me <ArrowRightSquare size={25} />
