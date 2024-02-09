@@ -5,6 +5,7 @@ const Skills = () => {
     return (
         <div>
             <SkillsSphere />
+            <div style={{color: "white"}}>Skills</div>
         </div>
     )
 }

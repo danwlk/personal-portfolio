@@ -27,6 +27,26 @@ const SkillsSphere = () => {
     };
 
     TagCloud(container, texts, options);
+
+    const handleClick = (event) => {
+      console.log(`Clicked on text: ${event.target.textContent}`);
+      // Perform your action here, e.g., displaying more information about the clicked skill
+    };
+
+    setTimeout(() => {
+      const tags = document.querySelectorAll(`${container} > span`);
+      tags.forEach(tag => {
+        tag.addEventListener('click', handleClick);
+      });
+    }, 1000);
+
+    return () => {
+      const tags = document.querySelectorAll(`${container} > span`);
+      tags.forEach(tag => {
+        tag.removeEventListener('click', handleClick);
+      });
+    };
+
   }, []);
 
   return (
