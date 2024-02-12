@@ -334,6 +334,39 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /**********************************************************************************************************************************************/
 /* Skills Styles */
+.skill {
+  margin-top: 0;
+  padding: 260px 0 100px 0;
+  background-image: url("./assets/img/skills-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+}
+
+.skill-box {
+  background-color: #151515;
+  display: grid;
+  place-items: center;
+  width: 80%;
+  border-radius: 5%;
+}
+
+.skill-title {
+  font-weight: 700;
+  color: white;
+  padding-top: 50px;
+}
+
+.skill-description {
+  font-weight: 500;
+  color: #b8b8b8;
+  text-align: center;
+  padding-top: 30px;
+}
+
 .skills-sphere {
   position: relative;
   top: 0;
@@ -342,7 +375,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: black;
 }
 
 .tagcloud {
@@ -355,7 +387,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .tagcloud--item {
-  color: #b8b8b8;
+  color: white;
   text-transform: uppercase;
 }
 
@@ -363,3 +395,39 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   cursor: pointer;
   color: blueviolet;
 }
+
+.skills-meter {
+  display: grid;
+  place-items: center;
+  margin-left: 200px;
+}
+
+.skills-meter-bar {
+  border: 2px solid white;
+  padding: 200px 50px;
+  font-size: 18px;
+  border-radius: 2%;
+  position: relative;
+  background-color: blueviolet;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+  --bar-height: 0%;
+}
+
+.skills-meter-bar::before {
+  content: "";
+  height: var(--bar-height);
+  width: 100%;
+  position: absolute;
+  background-color: #121212;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  transition: 1s ease-in-out;
+}
+
+.skills-meter h5 {
+  color: white;
+  margin-top: 20px;
+}
+
