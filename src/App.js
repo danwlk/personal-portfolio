@@ -2,8 +2,9 @@ import React, { useEffect } from "react";
 import "./App.css";
 import NavBar from "./components/NavBar";
 import Banner from "./components/Banner";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Skills from "./components/Skills/Skills";
+import Projects from "./components/Projects/Projects";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <NavBar />
       <Banner />
       <Skills />
+      <Projects />
     </div>
   );
 }

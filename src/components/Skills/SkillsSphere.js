@@ -17,9 +17,9 @@ const SkillsSphere = () => {
     Excel: 90,
     Java: 90,
     "Web Development": 90,
+    Teamwork: 100,
   };
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const container = ".tagcloud";
     const texts = [
@@ -35,6 +35,7 @@ const SkillsSphere = () => {
       "Excel",
       "Java",
       "Web Development",
+      "Teamwork",
     ];
     const options = {
       radius: 300,
@@ -68,6 +69,7 @@ const SkillsSphere = () => {
         tag.removeEventListener("click", handleClick);
       });
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
