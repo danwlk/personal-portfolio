@@ -7,7 +7,7 @@ import droneGamePNG from "../../assets/img/drone-game.png";
 import ticTacToePNG from "../../assets/img/tic-tac-toe.png";
 import myEducationPNG from "../../assets/img/my-education.png";
 import { Container, Row } from "react-bootstrap";
-import { Col, Tab } from "react-bootstrap";
+import { Col } from "react-bootstrap";
 
 const Projects = () => {
   const projects = [
@@ -24,12 +24,14 @@ const Projects = () => {
         "Git",
       ],
       imgUrl: personalPortfolioPNG,
+      link: "https://github.com/danwlk/personal-portfolio",
     },
     {
       title: "menu-ai",
       description: "A food menu that can be used only with your voice!",
       tags: ["React", "HTML", "CSS", "JavaScript", "Git"],
       imgUrl: menuAiPNG,
+      link: "https://github.com/danwlk/menu-ai",
     },
     {
       title: "Covid Check In",
@@ -37,6 +39,7 @@ const Projects = () => {
         "Created a COVID Health Check Website for North Vancouver School District.",
       tags: ["HTML", "CSS", "JavaScript", "Teamwork"],
       imgUrl: covidCheckInPNG,
+      link: "https://github.com/danwlk/covidHealthCheck"
     },
     {
       title: "MyEducation",
@@ -44,12 +47,14 @@ const Projects = () => {
         "Teachers can use this software to create their class, add and remove students, and keep track of student grades.",
       tags: ["Java"],
       imgUrl: myEducationPNG,
+      link: "https://github.com/danwlk/MyEducation"
     },
     {
       title: "Drone Game (Text Based)",
       description: "",
       tags: ["Java"],
       imgUrl: droneGamePNG,
+      link: "https://github.com/danwlk/droid-text-game"
     },
     {
       title: "Tic-Tac-Toe",
@@ -57,6 +62,7 @@ const Projects = () => {
         "Created a tic-tac-toe game in python that people can play on their computer when bored.",
       tags: ["Python"],
       imgUrl: ticTacToePNG,
+      link: "https://github.com/danwlk/ticTacToe"
     },
   ];
 

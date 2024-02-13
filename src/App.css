@@ -462,6 +462,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .proj-imgbx {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   background-color: white;
