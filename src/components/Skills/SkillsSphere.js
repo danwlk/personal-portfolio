@@ -3,7 +3,22 @@ import TagCloud from "TagCloud";
 
 const SkillsSphere = () => {
   const [barHeight, setBarHeight] = useState(0);
+  const skillToBarHeight = {
+    React: 95,
+    HTML: 90,
+    CSS: 85,
+    JavaScript: 80,
+    Python: 90,
+    Bootstrap: 70,
+    MySQL: 60,
+    Git: 90,
+    C: 90,
+    Excel: 90,
+    Java: 90,
+    "Web Development": 90,
+  };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const container = ".tagcloud";
     const texts = [
@@ -31,47 +46,8 @@ const SkillsSphere = () => {
 
     const handleClick = (event) => {
       console.log(`Clicked on text: ${event.target.textContent}`);
-      // Perform your action here, e.g., displaying more information about the clicked skill
-      switch (event.target.textContent) {
-        case "React":
-          setBarHeight(95);
-          break;
-        case "HTML":
-          setBarHeight(90);
-          break;
-        case "CSS":
-          setBarHeight(85);
-          break;
-        case "JavaScript":
-          setBarHeight(80);
-          break;
-        case "Python":
-          setBarHeight(90);
-          break;
-        case "Bootstrap":
-          setBarHeight(70);
-          break;
-        case "MySQL":
-          setBarHeight(60);
-          break;
-        case "Git":
-          setBarHeight(90);
-          break;
-        case "C":
-          setBarHeight(90);
-          break;
-        case "Excel":
-          setBarHeight(90);
-          break;
-        case "Java":
-          setBarHeight(90);
-          break;
-        case "Web Development":
-          setBarHeight(90);
-          break;
-        default:
-          setBarHeight(0);
-      }
+      const barHeight = skillToBarHeight[event.target.textContent] || 0;
+      setBarHeight(barHeight);
     };
 
     setTimeout(() => {
