@@ -3,6 +3,7 @@ import TagCloud from "TagCloud";
 
 const SkillsSphere = () => {
   const [barHeight, setBarHeight] = useState(0);
+  const [skill, setSkill] = useState("");
   const skillToBarHeight = {
     React: 95,
     HTML: 90,
@@ -46,8 +47,12 @@ const SkillsSphere = () => {
 
     const handleClick = (event) => {
       console.log(`Clicked on text: ${event.target.textContent}`);
-      const barHeight = skillToBarHeight[event.target.textContent] || 0;
-      setBarHeight(barHeight);
+      const height = skillToBarHeight[event.target.textContent];
+      setSkill(event.target.textContent);
+      setBarHeight(0);
+      setTimeout(() => {
+        setBarHeight(height);
+      }, 1000);
     };
 
     setTimeout(() => {
@@ -75,6 +80,7 @@ const SkillsSphere = () => {
           style={{ "--bar-height": `${100 - barHeight}%` }}
         ></div>
         <h5>Proficiency</h5>
+        <h5>{skill}</h5>
       </div>
     </div>
   );
