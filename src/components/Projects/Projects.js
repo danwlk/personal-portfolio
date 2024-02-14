@@ -72,7 +72,7 @@ const Projects = () => {
         <Row>
           <Col>
             <h2>Projects</h2>
-            <p>Here are some projects to showcase my skills.</p>
+            <p>Here are some projects to showcase my skills. Clicking on the projects will take you to the project repository.</p>
             <Row>
               {projects.map((project, index) => {
                 return <ProjectCard key={index} project={project} />;
