@@ -516,3 +516,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 15px;
   letter-spacing: 0.8px;
 }
+
+.proj-links a button {
+  background-color: transparent;
+  color: #b8b8b8;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  border-radius: 20px 20px 20px 20px; /* Adjust the radius values to control the roundness */
+  border: none; /* Remove default button border */
+  padding: 0px 20px; /* Adjust padding as needed */
+}
+
+.proj-links a button:hover{
+  background-color: grey;
+}
