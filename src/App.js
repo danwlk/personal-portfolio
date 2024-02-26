@@ -5,11 +5,11 @@ import Banner from "./components/Banner";
 import Skills from "./components/Skills/Skills";
 import Projects from "./components/Projects/Projects";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Connect from "./components/Connect/Connect";
 
 function App() {
-
   useEffect(() => {
-    document.title = "Welcome to Doyup's Portfolio!";
+    document.title = "Doyup Kim";
   }, []);
 
   return (
@@ -18,6 +18,7 @@ function App() {
       <Banner />
       <Skills />
       <Projects />
+      <Connect />
     </div>
   );
 }

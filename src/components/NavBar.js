@@ -3,6 +3,7 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import Logo from "../assets/img/logo.png";
 import LinkedInLogo from "../assets/img/linkedIn.png";
 import GitHubLogo from "../assets/img/gitHub.png";
+import resume from "../assets/Doyup's Resume.pdf";
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
@@ -71,13 +72,22 @@ const NavBar = () => {
               Projects
             </Nav.Link>
             <Nav.Link
+              href="#connect"
+              className={
+                activeLink === "connect" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("connect")}
+            >
+              Contact
+            </Nav.Link>
+            <Nav.Link
               href="#resume"
               className={
                 activeLink === "resume" ? "active navbar-link" : "navbar-link"
               }
               onClick={() => onUpdateActiveLink("resume")}
             >
-              Resume
+              <a href={resume} download="Doyup Kim's Resume" style={{color: 'white'}}>Resume</a>
             </Nav.Link>
           </Nav>
           <span className="navbar-text">
@@ -101,12 +111,6 @@ const NavBar = () => {
                 <img src={GitHubLogo} alt="Github" style={{ width: "30px" }} />
               </a>
             </div>
-            <button
-              className="connectButton"
-              onClick={() => console.log("Connect")}
-            >
-              <span>Connect With Me</span>
-            </button>
           </span>
         </Navbar.Collapse>
       </Container>

@@ -6,7 +6,7 @@ const ProjectCard = ({
 }) => {
   return (
     <Col sm={6} md={4}>
-      <div className="proj-imgbx">
+      <div className="proj-imgbx" key={title}>
         <img src={imgUrl} alt="project display" />
         <div className="proj-txtx">
           <h4>{title}</h4>
