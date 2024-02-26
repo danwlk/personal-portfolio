@@ -6,13 +6,13 @@ const SkillsSphere = () => {
   const [skill, setSkill] = useState("");
   const skillToBarHeight = {
     React: 95,
-    HTML: 90,
+    HTML: 95,
     CSS: 85,
     JavaScript: 80,
     Python: 90,
-    Bootstrap: 70,
-    MySQL: 60,
-    Git: 90,
+    Bootstrap: 85,
+    MySQL: 70,
+    Git: 100,
     C: 90,
     Excel: 90,
     Java: 90,
