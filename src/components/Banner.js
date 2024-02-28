@@ -24,6 +24,7 @@ const Banner = () => {
     return () => {
       clearInterval(ticker);
     };
+    // eslint-disable-next-line
   }, [text]);
 
   useEffect(() => {
