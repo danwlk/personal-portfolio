@@ -33,6 +33,7 @@ const NavBar = () => {
         <Navbar.Brand href="#home">
           <a href="http://doyupkim.com/">
             <img
+              className="logo"
               src={Logo}
               alt="Logo"
               style={{ filter: "invert(100%)", width: "100px" }}
@@ -87,7 +88,13 @@ const NavBar = () => {
               }
               onClick={() => onUpdateActiveLink("resume")}
             >
-              <a href={resume} download="Doyup Kim's Resume" style={{color: 'white'}}>Resume</a>
+              <a
+                href={resume}
+                download="Doyup Kim's Resume"
+                style={{ color: "white" }}
+              >
+                Resume
+              </a>
             </Nav.Link>
           </Nav>
           <span className="navbar-text">
