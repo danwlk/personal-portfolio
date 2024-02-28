@@ -85,10 +85,7 @@ const Banner = () => {
             <p>
               I am a web developer based in Waterloo, Ontario.
               <br />
-              I'm currently learning React, Node.js, and MySQL.
-              <br />
-              My website is almost finished, I will be uploading the final
-              product soon.
+              I am currently learning React, Node.js, and MySQL.
             </p>
             <button onClick={() => (window.location.href = "#connect")}>
               Connect With Me <ArrowRightSquare size={25} />
