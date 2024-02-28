@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightSquare } from "react-bootstrap-icons";
-import pfp from "../assets/img/profile-picture.png";
+import pfp from "../../assets/img/profile-picture.png";
 
 const Banner = () => {
   const toRotate = [

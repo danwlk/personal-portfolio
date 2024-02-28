@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import Logo from "../assets/img/logo.png";
-import LinkedInLogo from "../assets/img/linkedIn.png";
-import GitHubLogo from "../assets/img/gitHub.png";
-import resume from "../assets/Doyup's Resume.pdf";
+import Logo from "../../assets/img/logo.png";
+import LinkedInLogo from "../../assets/img/linkedIn.png";
+import GitHubLogo from "../../assets/img/gitHub.png";
+import resume from "../../assets/Doyup's Resume.pdf";
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState("home");
