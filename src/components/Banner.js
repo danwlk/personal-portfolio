@@ -90,7 +90,7 @@ const Banner = () => {
               My website is almost finished, I will be uploading the final
               product soon.
             </p>
-            <button onClick={() => console.log("connect")}>
+            <button onClick={() => (window.location.href = "#connect")}>
               Connect With Me <ArrowRightSquare size={25} />
             </button>
           </Col>
