@@ -18,6 +18,8 @@ const SkillsSphere = () => {
     Java: 90,
     "Web Development": 90,
     Teamwork: 100,
+    "MS Azure": 90,
+    "MS Azure AI": 90
   };
 
   useEffect(() => {
@@ -36,9 +38,11 @@ const SkillsSphere = () => {
       "Java",
       "Web Development",
       "Teamwork",
+      "MS Azure",
+      "MS Azure AI"
     ];
     const options = {
-      radius: 300,
+      radius: 350,
       maxspeed: "normal",
       initSpeed: "normal",
       keep: true,
