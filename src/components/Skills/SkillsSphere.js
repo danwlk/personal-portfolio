@@ -6,20 +6,18 @@ const SkillsSphere = () => {
   const [skill, setSkill] = useState("");
   const skillToBarHeight = {
     React: 95,
-    HTML: 95,
-    CSS: 85,
-    JavaScript: 80,
+    HTML: 90,
+    CSS: 90,
+    JavaScript: 95,
     Python: 90,
     Bootstrap: 85,
-    MySQL: 70,
+    MySQL: 85,
     Git: 100,
-    C: 90,
-    Excel: 90,
-    Java: 90,
-    "Web Development": 90,
-    Teamwork: 100,
-    "MS Azure": 90,
-    "MS Azure AI": 90
+    C: 80,
+    Java: 80,
+    "MS Azure AI": 75,
+    "React Native": 90,
+    "Supabase": 85,
   };
 
   useEffect(() => {
@@ -34,12 +32,10 @@ const SkillsSphere = () => {
       "MySQL",
       "Git",
       "C",
-      "Excel",
       "Java",
-      "Web Development",
-      "Teamwork",
-      "MS Azure",
-      "MS Azure AI"
+      "MS Azure AI",
+      "React Native",
+      "Supabase",
     ];
     const options = {
       radius: 350,
