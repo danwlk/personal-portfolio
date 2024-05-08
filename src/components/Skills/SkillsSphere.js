@@ -16,8 +16,8 @@ const SkillsSphere = () => {
     C: 80,
     Java: 80,
     "MS Azure AI": 75,
-    "React Native": 90,
-    "Supabase": 85,
+    "React Native": 95,
+    Supabase: 90,
   };
 
   useEffect(() => {

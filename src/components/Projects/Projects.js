@@ -4,8 +4,8 @@ import personalPortfolioPNG from '../../assets/img/personal-portfolio.png';
 import menuAiPNG from '../../assets/img/menu-ai.png';
 import covidCheckInPNG from '../../assets/img/covid-check-in.png';
 import droneGamePNG from '../../assets/img/drone-game.png';
-import myEducationPNG from '../../assets/img/my-education.png';
-import searchCardsPNG from '../../assets/img/search-cards.png'
+import searchCardsPNG from '../../assets/img/search-cards.png';
+import carrotMarketPNG from '../../assets/img/carrot-market.png';
 import { Container, Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 
@@ -24,15 +24,32 @@ const Projects = () => {
                 'Git',
             ],
             imgUrl: personalPortfolioPNG,
-            link: 'https://doyupkim.com',
+            link: 'https://doyupkim.ca',
             repoLink: 'https://github.com/danwlk/personal-portfolio',
+        },
+        {
+            title: 'Carrot Market',
+            description:
+                'This is a better version of Facebook Marketplace. Users can sell and buy used items.',
+            tags: [
+                'React Native',
+                'Node.js',
+                'React',
+                'JavaScript',
+                'CSS',
+                'Git',
+                'Mobile Development',
+            ],
+            imgUrl: carrotMarketPNG,
+            link: 'https://github.com/danwlk/carrot-market',
+            repoLink: 'https://github.com/danwlk/carrot-market',
         },
         {
             title: 'menu-ai',
             description: 'A food menu that can be used only with your voice!',
             tags: ['React', 'HTML', 'CSS', 'JavaScript', 'Git'],
             imgUrl: menuAiPNG,
-            link: 'https://menu-ai.doyupkim.com/',
+            link: 'https://menu-ai.doyupkim.ca/',
             repoLink: 'https://github.com/danwlk/menu-ai',
         },
         {
@@ -41,7 +58,7 @@ const Projects = () => {
                 'Created 4 search cards to practice working with 4 different APIs.',
             tags: ['React', 'HTML', 'CSS', 'JavaScript', 'Git'],
             imgUrl: searchCardsPNG,
-            link: 'https://search-cards.doyupkim.com/',
+            link: 'https://search-cards.doyupkim.ca/',
             repoLink: 'https://github.com/danwlk/search-cards',
         },
         {
@@ -50,18 +67,10 @@ const Projects = () => {
                 'Created a COVID Health Check Website for North Vancouver School District.',
             tags: ['HTML', 'CSS', 'JavaScript', 'Teamwork'],
             imgUrl: covidCheckInPNG,
-            link: 'https://covid-check-in.doyupkim.com/',
+            link: 'https://covid-check-in.doyupkim.ca/',
             repoLink: 'https://github.com/danwlk/covidHealthCheck',
         },
-        {
-            title: 'MyEducation',
-            description:
-                'Teachers can use this software to create their class, add and remove students, and keep track of student grades.',
-            tags: ['Java'],
-            imgUrl: myEducationPNG,
-            link: 'https://github.com/danwlk/MyEducation',
-            repoLink: 'https://github.com/danwlk/MyEducation',
-        },
+
         {
             title: 'Drone Game (Text Based)',
             description: 'Players can experience the life of a drone racer.',
